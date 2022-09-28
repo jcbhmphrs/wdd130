@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', 'Bradley Hand', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+headline {
+    font-family: Oswald, Helvetica, sans-serif;
+}
+h2 {
+    margin: 0;
+}
+#logo_link {
+    padding-top: 5PX;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;   
 }
 nav a {
+    padding: 35px;
     text-align: center;
     color: black;
     text-decoration: none;
@@ -16,6 +36,10 @@ nav a {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
 }
@@ -30,6 +54,7 @@ nav a:hover {
     color: black;
 }
 .book, .join {
+    padding: 15px 30px;
     background-color: #EABFA9;
     text-decoration: none;
 }
@@ -40,21 +65,40 @@ nav a:hover {
     background-color: #F6E7CB;
 }
 .msg {
+    padding: 35px;
     background-color: #F6E7CB;
 }
-footer {
-    background-color: #DD9787;
+
+.rivers_card, .camping_card, .rapids_card {
+    margin: 200px 0;
 }
+
 .home_title {
+    margin-top: 10px;
+    font-size: 2em;
+    font-family: oswald, Helvetica, sans-serif;
     color: #F6E7CB;
 }
 h4 {
     color: #F6E7CB;
 }
+
 .book, .join {
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 18px;
     color: black;
 }
+.book:hover, .join:hover {
+    color: black;
+}
+
+.card_img {
+    border: 10px solid #DD9787;
+}
+
 .icon {
+    padding-top: 10px;
     width: 80px;
 }
 .logo {
@@ -63,14 +107,21 @@ h4 {
 #hero_img {
     width: 100%;
 }
-.book:hover, .join:hover {
-    color: black;
-}
+
 .msg h2 {
+    line-height: 1.5em;
+    font-size: 0.8em;
+    font-family: oswald, Helvetica, sans-serif;
     color: #678D58;
 }
 .msg p {
+    padding-bottom: 15px;
     color: #678D58;
+}
+footer {
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: #DD9787;
 }
 footer h3{
     color: black;
@@ -87,4 +138,7 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
