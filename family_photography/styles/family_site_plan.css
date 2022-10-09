@@ -32,6 +32,13 @@ Fonts are separated by a | */
 
 /* personal adaptations */
 
+
+
+
+.logo{
+  max-width:300px ;
+  max-height:300px ;
+}
 .home_page_img {
   padding: 5px;
   max-width: 600px;
