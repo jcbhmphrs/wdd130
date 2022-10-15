@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="styles/fam_photo_index.css">
+    <title>Family Photography</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logos/family_photography_logo.png" alt="logo_image">
+            </a>
+            <nav>
+                <a href="home_page.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="ordering.html">Ordering</a>
+                <a href="fam_photo_site_plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <section id="odering_grid">
+            <img id="frame_img" src="images/ordering/pexels-agung-pandit-wiguna-1128318.jpg">
+            <p>Ordering pictures from Family Photography is easier than ever now with our online site! You can include an email address and a physical address for your convenience we will send you digital copies to your email and we will also ship your prints right to your doorstep! Select what picture format or style you want and hit DELIVER!</p>
+            <form action="/ordering_page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li class="button">
+                        <button type="button">Sepia Tone</button>
+                        <button type="button">Black and White</button>
+                        <button type="button">Regular</button>
+                        <button type="button">DELIVER</button>
+                    </li>
+                </ul>
+            </form>
+            <footer>
+                <h3>Family Photography &copy; 20XX - Jacob Humphreys</h3>
+                <p><a href="fam_photo_site_plan.html">Site Plan</a></p>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
