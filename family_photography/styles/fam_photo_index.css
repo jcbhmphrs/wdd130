@@ -76,7 +76,7 @@ footer a{
     grid-template-columns:1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-ul h1{
+div h1{
     justify-self: center;
     background-color: aliceblue;
     padding: 10px;
@@ -88,7 +88,7 @@ ul h1{
     margin-bottom: 50px;
     margin-left: 145px;
 }
-ul p{
+div p{
     background-color: aliceblue;
     padding: 10px;
     margin:0 auto;
@@ -97,7 +97,7 @@ ul p{
     grid-column: 1/3;
     width: 400px;
 }
-ul{
+div .welcome_bar{
     position: relative;
     top: 20px;
     margin: 0 auto;
@@ -116,7 +116,7 @@ ul{
     width: 1200px;
     background-color:#59546C;
     margin: 0 auto;
-    height: 100%px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
