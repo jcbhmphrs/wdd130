@@ -1,0 +1,250 @@
+/* all pages css */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Playfair+Display:wght@500&display=swap');
+
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+nav {
+    margin-left: 60px;
+    display: flex;
+    justify-content:space-around;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    z-index: 1;
+}
+.logo, #logo_link{
+    margin-top: 15px;
+    width: 5em;
+}
+.nav_button {
+    font-size: 1.5em;
+    padding: 20px;
+    height: 30px;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'oxygen',sans-serif;
+}
+.nav_button:hover {
+    background-color: rgb(89, 84, 109, .25);
+    color: rgb(255, 255, 255);
+}
+.home_icon{
+    width: 200px;
+}
+#order_icon,#order_link{
+    grid-column: 2/3;
+}
+#gallery_icon,#gallery_link{
+    grid-column: 3/4;
+}
+#order_link,#gallery_link{
+    z-index: 1;
+}
+
+.home_link{
+    height: 20px;
+    width: 88px;
+    background-color: aliceblue;
+    text-decoration: none;
+    border: solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+footer{
+    background-color: aliceblue;
+}
+h3{
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+/* home page and gallery */
+#main_grid{
+    height: 500px;
+    background-color: #59546C;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+ul h1{
+    justify-self: center;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    grid-column: 1/3;
+    width: 16em;
+    font-family: 'oxygen',sans-serif;
+    margin-bottom: 50px;
+    margin-left: 145px;
+}
+ul p{
+    background-color: aliceblue;
+    padding: 10px;
+    margin:0 auto;
+    border-radius: 5px;
+    text-align: center;
+    grid-column: 1/3;
+    width: 400px;
+}
+ul{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    grid-column: 1/3;
+    justify-self: center;
+    height: 350px;
+    background-color: #38405F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.home_grid{
+    position: relative;
+    top: 30px;
+    width: 1200px;
+    background-color:#59546C;
+    margin: 0 auto;
+    height: 100%px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#order_icon,#gallery_icon{
+    position: relative;
+    top: 80px;
+    grid-row: 2/3;
+}
+#order_icon, #order_link{
+    grid-column: 1/2;
+    margin: 0 auto;
+}
+#gallery_icon, #gallery_link{
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+#order_link,#gallery_link{
+    position: relative;
+    bottom: 55px;
+    left: 5px;
+}
+#banner{
+    height: 25em;
+    height: 20em;
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallery css */
+#gallery_grid{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.gallery_img:hover{
+    filter: grayscale(0%);
+    transform: scale(2.5);
+    z-index: 1;
+}
+.gallery_img{
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+    transition: .75s;
+    width: 200px;
+    height: 150px;
+    border: solid black;
+}
+.gallery_upper{
+    background-color: #59546C;
+    height: 150px;
+    z-index: 1;
+    width: 800px;
+    margin-bottom: 20px;
+}
+.gallery_upper p{
+    position: relative;
+    bottom: -15px;
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+.gallery_lower{
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr repeat(5,250px) 1fr;
+    grid-template-rows: 1fr repeat(2,200px) 1fr;
+    background-color: #38405F;
+    justify-items: center;
+    align-items: center;
+}
+
+#g1,#g2,#g3,#g4,#g5{
+    grid-row: 2/3;
+}
+#g6,#g7,#g8,#g9,#g0{
+    grid-row: 3/4;
+}
+#g1,#g6{
+    grid-column: 2/3;
+}
+#g2,#g7{
+    grid-column: 3/4;
+}
+#g3,#g8{
+    grid-column: 4/5;
+}
+#g4,#g9{
+    grid-column: 5/6;
+}
+#g5,#g0{
+    grid-column: 6/7;
+}
+
+
+
+
+
+
+/* ordering css */
+#ordering_header nav a{
+    grid-column-start: 1;
+    background-color: transparent;
+
+}
+#ordering_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+#frame_img{
+    grid-column-start: 1;
+    width: 100%; 
+    z-index: -1;
+}

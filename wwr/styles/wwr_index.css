@@ -37,6 +37,10 @@ nav a {
     color: rgb(0,0,0,.5);
     text-decoration: none;
 }
+nav a:hover {
+    background-color: #F6E7CB;
+    color: black;
+}
 #hero {
     margin-top: -100px;
     display: grid;
@@ -76,10 +80,7 @@ main section img {
 body {
     background-color: #678D58;
 }
-nav a:hover {
-    background-color: #F6E7CB;
-    color: black;
-}
+
 .book, .join {
     padding: 15px 30px;
     background-color: #EABFA9;
