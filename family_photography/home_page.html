@@ -4,40 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="styles/fam_photo_index.css">
+    <link rel="stylesheet" href="styles/fam_photo_index.css">
     <title>Family Photography</title>
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logos/family_photography_logo.png" alt="logo_image">
-            </a>
             <nav>
-                <a href="home_page.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="ordering.html">Ordering</a>
-                <a href="fam_photo_site_plan.html">Site Plan</a>
+                <a id="logo_link" href="home_page.html">
+                    <img class="logo" src="images/logos/family_photography_logo.png" alt="logo_image">
+                </a>
+                <a class="nav_button" href="home_page.html">Home</a>
+                <a class="nav_button" href="gallery.html">Gallery</a>
+                <a class="nav_button" href="ordering.html">Ordering</a>
+                <a class="nav_button" href="fam_photo_site_plan.html">Site Plan</a>
             </nav>
+            <img id="banner" src="images/home_page/pexels-john-cahil-rom-3041851.jpg" alt="banner">
         </header>
-        <div id="banner">
-            <img src="images/home_page/pexels-john-cahil-rom-3041851.jpg">
-        </div>
-        <section id="main_grid">
-            <ul class="content_upper">
+        
+        <section class="home_grid">
+            <ul>
                 <h1>Welcome to Family Photography</h1>
-                <p>Family is the one of the most precious gifts that God has given us. People all around the world, regardless of culture or climate or creed, care about their families. They are our future and they should be the safest and happiest places in our lives. Welcome to Family Photography. We here at family photography are dedicated to provide the world with access to memories made with their families. Photos that can fill our home and remind us of God's gift of the family. </p>
+                <p>Welcome to Family Photography. Family is the one of the most precious gifts that God has given us. People all around the world, regardless of culture or climate or creed, care about their families. They are our future and they should be the safest and happiest places in our lives. We here at family photography are dedicated to provide the world with access to memories made with their families - Photos that can fill our home and remind us of God's gift of the family. </p>
             </ul>
-            <ul class="content_lower">
-                <img class="ordering_img" src="images/home_page/shopping-cart-icon.png">
-                <a href="ordering.html" rel="ordering_icon">Order Photos</a>
-                <img class="gallery_img" src="images/home_page/photo-gallery-icon.png">
-                <a href="gallery.html" rel="gallery_icon">View Gallery</a>
-            </ul>
+            <img id="order_icon" class="home_icon" src="images/home_page/shopping-cart-icon.png">
+            <a id="order_link" class="home_link" href="ordering.html" rel="ordering_icon">Order Photos</a>
+            <img id="gallery_icon" class="home_icon" src="images/home_page/photo-gallery-icon.png">
+            <a id="gallery_link" class="home_link" href="gallery.html" rel="gallery_icon">View Gallery</a>
         </section>
+    
         <footer>
             <h3>Family Photography &copy; 20XX - Jacob Humphreys</h3>
-            <p><a href="fam_photo_site_plan.html">Site Plan</a></p>
+            <a href="fam_photo_site_plan.html">Site Plan</a>
         </footer>
     </div>
 </body>
