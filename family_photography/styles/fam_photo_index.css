@@ -172,7 +172,7 @@ div .welcome_bar{
 }
 .gallery_upper{
     background-color: #59546C;
-    height: 150px;
+    height: 300px;
     z-index: 1;
     width: 800px;
     margin-bottom: 20px;
@@ -184,6 +184,7 @@ div .welcome_bar{
     width: 500px;
     padding: 10px;
     text-align: center;
+    font-family: 'Oxygen';
 }
 .gallery_lower{
     height: 800px;
@@ -194,6 +195,7 @@ div .welcome_bar{
     background-color: #38405F;
     justify-items: center;
     align-items: center;
+    margin-top: -20px;
 }
 
 #g1,#g2,#g3,#g4,#g5{
