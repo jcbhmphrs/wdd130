@@ -8,7 +8,7 @@
     <title>Ordering</title>
 </head>
 <body>
-    <div id="ordering_grid">
+    <div>
         <header>
             <nav>
                 <a id="logo_link" href="home_page.html">
@@ -19,33 +19,57 @@
                 <a class="nav_button" href="ordering.html">Ordering</a>
                 <a class="nav_button" href="fam_photo_site_plan.html">Site Plan</a>
             </nav>
-            <img id="banner" src="images/ordering/pexels-agung-pandit-wiguna-1128318.jpg" alt="banner">
+            <img id="banner" src="images/ordering/pexels-archie-binamira-1660234.jpg" alt="banner">
         </header>
-        <section>
-            <p>Ordering pictures from Family Photography is easier than ever now with our online site! You can include an email address and a physical address for your convenience we will send you digital copies to your email and we will also ship your prints right to your doorstep! Select what picture format or style you want and hit DELIVER!</p>
-            <form action="/ordering_page" method="post">
+
+
+        <section class="ordering_grid">
+            <img class="body_bg" src="images/ordering/pexels-agung-pandit-wiguna-1128318.jpg" alt="body bg">
+            <p class="order_paragraph">Ordering pictures from Family Photography is easier than ever now with our online site! You can include an email address and a physical address for your convenience we will send you digital copies to your email and we will also ship your prints right to your doorstep! Select what picture format or style you want and hit DELIVER!</p>
+            
+            
+            <form action="/ordering_page" method="submit">
                 <ul>
                     <li>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name">
+                        <label class="form_text" for="name">Name</label>
+                        <input  type="text" id="name" name="user_name">
                     </li>
                     <li>
-                        <label for="mail">Email:</label>
+                        <label class="form_text" for="mail">Email:</label>
                         <input type="email" id="mail" name="user_email">
                     </li>
                     <li class="button">
-                        <button type="button">Sepia Tone</button>
-                        <button type="button">Black and White</button>
-                        <button type="button">Regular</button>
-                        <button type="button">DELIVER</button>
+                        <button class="sep_button" type="button">Sepia Tone</button>
+                        <button class="bw_button" type="button">Black and White</button>
+                        <button class="reg_button" type="button">Regular</button>
+                        <button class="deliver_button" type="button">DELIVER</button>
                     </li>
                 </ul>
             </form>
-            <footer>
-                <h3>Family Photography &copy; 20XX - Jacob Humphreys</h3>
-                <p><a href="fam_photo_site_plan.html">Site Plan</a></p>
-            </footer>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form so we can read what was entered in it.
+                const formElement = document.forms[0];
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+                    // stop the form from doing the default action.
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                    // add a class to move everything down so our message doesn't cover it.
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
+            
         </section>
+        <footer>
+            <h3>Family Photography &copy; 20XX - Jacob Humphreys</h3>
+            <a href="fam_photo_site_plan.html">Site Plan</a>
+        </footer>
+
     </div>
 </body>
 </html>
