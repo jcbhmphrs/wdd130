@@ -47,6 +47,8 @@ nav {
 }
 
 footer{
+    position: relative;
+    top: 30px;
     background-color: aliceblue;
 }
 h3{
@@ -235,11 +237,14 @@ form{
     height: 150px;
 }
 .order_paragraph{
+    position: relative;
+    left: 50px;
     width: 300px;
     height: 190px;
     grid-row: 1/2;
     grid-column: 1/2;
     z-index: 1;
+    background-color: rgb(240, 248, 255, .9);
 }
 .form_text{
     font-size: larger;
@@ -254,19 +259,19 @@ form{
 
 /* form */
 form {
+    position: relative;
+    left: 50px;
     margin: 0 auto;
     width: 400px;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 form li+li {
     margin-top: 1em;
 }
@@ -275,7 +280,6 @@ label {
     width: 90px;
     text-align: right;
 }
-
 input,
 textarea {
     font: 1em sans-serif;
@@ -283,12 +287,10 @@ textarea {
     box-sizing: border-box;
     border: 1px solid #999;
 }
-
 input:focus,
 textarea:focus {
     border-color: #000;
 }
-
 textarea {
     vertical-align: top;
     height: 5em;
@@ -296,7 +298,6 @@ textarea {
 .button {
     margin-left: .5em;
 }
-
 #feedback {
     background-color: antiquewhite;
     position: absolute;
